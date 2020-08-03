@@ -1,17 +1,17 @@
 # dotfiles
 
-OS: Pop! OS 20.04
+<b>OS</b>: Pop! OS 20.04
 
-WM: Pop-Shell
+<b>WM</b>: Pop-Shell
 
-Bar: Polybar
+<b>Bar</b>: Polybar
 
-Terminal: Alacritty
+<b>Terminal</b>: Alacritty
 
-Font: Fira Code
+<b>Font</b>: Fira Code
 
-GTK Theme: Nordic-Darker
+<b>GTK Theme</b>: Nordic-Darker
 
-Icons: Nordic-Blue
+<b>Icons</b>: Nordic-Blue
 
-Wallpaper: Cropped (https://imgur.com/a/0lp0Z82) / Original (https://i.imgur.com/4seBnk6.jpg)
+<b>Wallpaper</b>: <a href="https://imgur.com/a/0lp0Z82">Cropped</a> / <a href="https://i.imgur.com/4seBnk6.jpg">Original</a>
