@@ -16,4 +16,4 @@
 
 <b>Wallpaper</b>: <a href="https://imgur.com/a/0lp0Z82">Cropped</a> / <a href="https://i.imgur.com/4seBnk6.jpg">Original</a>
 
-<img src="https://imgur.com/LwLH1h1">
+<img src="https://i.imgur.com/LwLH1h1.png">
