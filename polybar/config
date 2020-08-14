@@ -46,12 +46,14 @@ width = 50%
 height = 25
 offset-x = 25%
 ;offset-y = 1%
-radius = 10.0
+radius = 1.0
 fixed-center = true
 
 override-redirect = true
 
-background = ${colors.polar4}
+wm-restack = i3
+
+background = ${colors.snow1}
 foreground = ${colors.foreground}
 
 line-size = 2
@@ -83,17 +85,17 @@ modules-right = cpu cpu-temperature gpu gpu-temperature memory wlan powermenu
 type = custom/script
 exec = ~/.config/polybar/scripts/system-nvidia-smi/system-nvidia-smi.sh
 interval = 10
-format-prefix-foreground = ${colors.frost1}
+format-prefix-foreground = ${colors.frost4}
 format-prefix = " "
-label-foreground = ${colors.snow3}
+label-foreground = ${colors.polar1}
 
 [module/gpu-temperature]
 type = custom/script
 exec = ~/.config/polybar/scripts/system-nvidia-smi/system-nvidia-smi-temp.sh
 interval = 10
-format-prefix-foreground = ${colors.frost1}
+format-prefix-foreground = ${colors.frost4}
 format-prefix = ""
-label-foreground = ${colors.snow3}
+label-foreground = ${colors.polar1}
 
 [module/light]
 type = custom/script
@@ -106,15 +108,15 @@ label-font = 6
 type = custom/script
 exec = ~/.config/polybar/scripts/openweathermap-simple/openweathermap-simple.sh
 interval = 600
-label-foreground = ${colors.snow3}
+label-foreground = ${colors.polar1}
 
 [module/spotify]
 type = custom/script
 interval = 1
 format-prefix = " "
 format = <label>
-format-foreground = ${colors.frost1}
-label-foreground = ${colors.snow3}
+format-foreground = ${colors.frost4}
+label-foreground = ${colors.polar1}
 exec = python3 ~/.config/polybar/scripts/polybar-spotify/spotify_status.py -q -f '{song}'
 
 [module/ewmh]
@@ -129,13 +131,14 @@ icon-5 = 5;
 
 label-active = %icon%
 label-empty = 
-label-active-foreground = ${colors.frost1}
+label-active-foreground = ${colors.frost4}
+label-empty-foreground = ${colors.polar1}
 
 [module/title]
 type = internal/xwindow
-format-prefix = " "
-format-foreground = ${colors.frost1}
-label-foreground = ${colors.snow3}
+format-prefix = " "
+format-foreground = ${colors.frost4}
+label-foreground = ${colors.polar1}
 
 label-maxlen = 30
 
@@ -143,17 +146,17 @@ label-maxlen = 30
 type = internal/cpu
 interval = 2
 format-prefix = ""
-format-prefix-foreground = ${colors.frost1}
+format-prefix-foreground = ${colors.frost4}
 label = %percentage:2%%
-format-foreground = ${colors.snow3}
+format-foreground = ${colors.polar1}
 
 [module/memory]
 type = internal/memory
 interval = 2
 format-prefix = " "
-format-prefix-foreground = ${colors.frost1}
+format-prefix-foreground = ${colors.frost4}
 label = %percentage_used%%
-format-foreground = ${colors.snow3}
+format-foreground = ${colors.polar1}
 
 [module/wlan]
 type = internal/network
@@ -163,7 +166,7 @@ interval = 3.0
 format-connected = <ramp-signal> <label-connected>
 label-connected = %essid%
 
-label-connected-foreground = ${colors.snow3}
+label-connected-foreground = ${colors.polar1}
 
 format-disconnected =
 
@@ -172,7 +175,7 @@ ramp-signal-1 = 
 ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
-ramp-signal-foreground = ${colors.frost1}
+ramp-signal-foreground = ${colors.frost4}
 
 [module/date]
 type = internal/date
@@ -181,7 +184,7 @@ interval = 5
 date = " %A %d %B"
 time = %r
 
-format-foreground = ${colors.snow3}
+format-foreground = ${colors.polar1}
 
 label = %date% %time%
 
@@ -196,12 +199,12 @@ format-warn = <ramp> <label-warn>
 label = %temperature-c%
 label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
-label-foreground = ${colors.snow3}
+label-foreground = ${colors.polar1}
 
 ramp-0 = 
 ramp-1 = 
 ramp-2 = 
-ramp-foreground = ${colors.frost1}
+ramp-foreground = ${colors.frost4}
 
 [module/powermenu]
 type = custom/menu
@@ -213,7 +216,7 @@ format-spacing = 1
 label-open = 
 label-open-foreground = ${colors.aurora1}
 label-close =  cancel
-label-close-foreground = ${colors.aurora3}
+label-close-foreground = ${colors.aurora4}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 
