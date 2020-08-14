@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
 Plug 'arcticicestudio/nord-vim'
+Plug 'ayu-theme/ayu-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdcommenter'
 Plug 'preservim/nerdtree'
@@ -10,6 +11,9 @@ Plug 'tpope/vim-dadbod'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
+
+set termguicolors
+let ayucolor="light"
 
 colorscheme nord
 let mapleader = ","

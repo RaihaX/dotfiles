@@ -8,31 +8,83 @@
 # References:
 #   https://github.com/jwilm/alacritty
 
-colors:
-  primary:
-    background: '0x2E3440'
-    foreground: '0xD8DEE9'
-  cursor:
-    text: '0x2E3440'
-    cursor: '0xD8DEE9'
-  normal:
-    black: '0x3B4252'
-    red: '0xBF616A'
-    green: '0xA3BE8C'
-    yellow: '0xEBCB8B'
-    blue: '0x81A1C1'
-    magenta: '0xB48EAD'
-    cyan: '0x88C0D0'
-    white: '0xE5E9F0'
-  bright:
-    black: '0x4C566A'
-    red: '0xBF616A'
-    green: '0xA3BE8C'
-    yellow: '0xEBCB8B'
-    blue: '0x81A1C1'
-    magenta: '0xB48EAD'
-    cyan: '0x8FBCBB'
-    white: '0xECEFF4'
+schemes:
+    nord: &nord
+        primary:
+            background: '0x2E3440'
+            foreground: '0xD8DEE9'
+        cursor:
+            text: '0x2E3440'
+            cursor: '0xD8DEE9'
+        normal:
+            black: '0x3B4252'
+            red: '0xBF616A'
+            green: '0xA3BE8C'
+            yellow: '0xEBCB8B'
+            blue: '0x81A1C1'
+            magenta: '0xB48EAD'
+            cyan: '0x88C0D0'
+            white: '0xE5E9F0'
+        bright:
+            black: '0x4C566A'
+            red: '0xBF616A'
+            green: '0xA3BE8C'
+            yellow: '0xEBCB8B'
+            blue: '0x81A1C1'
+            magenta: '0xB48EAD'
+            cyan: '0x8FBCBB'
+            white: '0xECEFF4'
+    ayu-light: &ayu-light
+        primary:
+            background: '0xfafafa'
+            foreground: '0x5b6672'
+
+        # Normal colors
+        normal:
+            black: '0x000000' #0
+            red: '0xf2590b' #1
+            green: '0x76cc00' #2
+            yellow: '0xf29717' #3
+            blue: '0x41a5d9' #4
+            magenta: '0x9965cc' #5
+            cyan: '0x4dbf98' #6
+            white: '0xc7c7c7' #7
+
+        # Bright colors
+        bright:
+            black: '0x676767'
+            red: '0xd6646a' #9
+            green: '0xa3d900' #10
+            yellow: '0xe7c446' #11
+            blue: '0x6871ff' #12
+            magenta: '0xa37acc' #13
+            cyan: '0x56d9ad' #14
+            white: '0xfeffff' #15 
+    pencil-light: &pencil-light
+        primary:
+            background: '#f1f1f1'
+            foreground: '#424242'
+        # Normal colors
+        normal:
+            black:   '#212121'
+            red:     '#c30771'
+            green:   '#10a778'
+            yellow:  '#a89c14'
+            blue:    '#008ec4'
+            magenta: '#523c79'
+            cyan:    '#20a5ba'
+            white:   '#e0e0e0'
+        # Bright colors
+        bright:
+            black:   '#212121'
+            red:     '#fb007a'
+            green:   '#5fd7af'
+            yellow:  '#f3e430'
+            blue:    '#20bbfc'
+            magenta: '#6855de'
+            cyan:    '#4fb8cc'
+            white:   '#f1f1f1'
+colors: *nord
 
 font:
     size: 10
@@ -48,9 +100,10 @@ font:
 
 window:
     padding:
-        x: 20
-        y: 20
+        x: 30
+        y: 30
     dynamic_padding: true
+    decorations: none
 
 key_bindings:
     - { key: W, mods: Control, action: Quit }
